@@ -1,11 +1,11 @@
 import React from 'react'
 import { Col, Card } from 'antd'
-import './styles.css'
+import './styles.less'
 
 const CardItem = props => {
   const { img, title } = props
   return (
-    <Col sm={12} md={12} lg={5} xl={5} offset={4} className="cardItem">
+    <Col sm={12} md={12} lg={5} xl={5} className="cardItem">
       <a href="#">
         <Card hoverable>
           <div className="cardItem__image">

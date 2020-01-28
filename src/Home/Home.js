@@ -16,7 +16,7 @@ import publicService from '../Assets/img/11.png'
 import otherComercies from '../Assets/img/12.png'
 // import homeimg from "../Assets/img/background.png";
 
-import './styles.css'
+import './styles.less'
 
 const Home = () => {
   return (

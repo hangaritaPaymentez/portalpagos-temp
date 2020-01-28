@@ -2,13 +2,13 @@ import React from 'react'
 import { Row, Col } from 'antd'
 import vigilado from '../../Assets/img/vigilado.png'
 
-import './styles.css'
+import './styles.less'
 
 const Footer = () => {
   return (
     <div className="footer__container">
       <Row type="flex" align="middle">
-        <Col sm={24} md={5} className="footer__img">
+        <Col sm={24} md={5} offset={1} className="footer__img">
           <div>
             <img src={vigilado} alt="vigilado" />
           </div>

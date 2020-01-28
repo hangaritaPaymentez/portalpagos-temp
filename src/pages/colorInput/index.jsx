@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Row, Col, Input, Button } from 'antd'
 
-class ColorInput extends React.Component {
-  state = { vars: { '@primary-color': '#dddddd' } }
+class ColorInput extends Component {
+  constructor() {
+    super();
+    this.state = { vars: { '@primary-color': '#dddddd' } }
+  }
 
   onChange = e => {
     const color = e.target.value

@@ -2,7 +2,7 @@
 import React from 'react'
 import { Row, Col, Layout, Menu } from 'antd'
 import logo from '../../Assets/img/dvvlogo.png'
-import './styles.css'
+import './styles.less'
 
 const { Header } = Layout
 
@@ -11,12 +11,12 @@ const NavBar = () => {
     <div>
       <Header>
         <Row>
-          <Col sm={24} md={6}>
+          <Col sm={24} md={5} offset={2}>
             <div className="logo">
               <img src={logo} alt="logo" />
             </div>
           </Col>
-          <Col sm={12} md={6}>
+          <Col sm={12} md={4}>
             <a>Pagos virtuales</a>
           </Col>
           <Col sm={12} md={12}>

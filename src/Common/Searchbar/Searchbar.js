@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Input } from 'antd'
 
-import './styles.css'
+import './styles.less'
 
 const Searchbar = () => {
   return (
