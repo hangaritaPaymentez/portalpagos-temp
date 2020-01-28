@@ -9,6 +9,8 @@ import 'antd/dist/antd.css'
 // app styles
 // import './global.scss'
 
+import './Assets/styles/index.less'
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history} />
