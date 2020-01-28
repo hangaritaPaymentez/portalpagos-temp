@@ -1,0 +1,19 @@
+div > div {
+  /* el div del col */
+  position: 'relative';
+}
+
+div > div > i {
+  position: absolute;
+  top: 35;
+  left: 25;
+  color: #c8ced3;
+}
+div > div > input {
+  padding-left: 40px;
+  margin-left: 8%;
+}
+div > div > input::placeholder {
+  color: #8f9ba6;
+  padding-left: 4;
+}

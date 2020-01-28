@@ -1,0 +1,19 @@
+.footer__container {
+  width: 100%;
+  height: 60px;
+  background: #6d6d71;
+  padding: 20px 80px;
+}
+
+.footer__img > div {
+  width: 200px;
+}
+.footer__img > div > img {
+  width: 100%;
+}
+
+.footer__text > h6 {
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+}
