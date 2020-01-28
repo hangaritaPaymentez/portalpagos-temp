@@ -1,13 +1,14 @@
 // Overriding CreateReactApp settings, ref: https://github.com/arackaf/customize-cra
-const antdTheme = require('./theme.js')
+const themeConfig = require('./config-theme.js')
 const {
   override,
-  fixBabelImports,
+  // fixBabelImports,
   addLessLoader,
   useEslintRc,
   addDecoratorsLegacy,
   overrideDevServer,
   watchAll,
+  addWebpackPlugin,
 } = require('customize-cra')
 
 module.exports = {
@@ -15,15 +16,19 @@ module.exports = {
     // usual webpack plugin
     addDecoratorsLegacy(),
     useEslintRc(),
+    /*
     fixBabelImports('import', {
       libraryName: 'antd',
       libraryDirectory: 'es',
       style: true,
     }),
+    */
+
     addLessLoader({
       javascriptEnabled: true,
-      modifyVars: antdTheme,
+      //modifyVars: antdTheme,
     }),
+    addWebpackPlugin(themeConfig.plugin),
   ),
   devServer: overrideDevServer(
     // dev server plugin
