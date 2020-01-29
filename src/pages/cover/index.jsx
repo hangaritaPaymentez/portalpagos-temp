@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Login from 'pages/user/login'
-import { Layout } from 'antd'
 
 class Cover extends Component {
   constructor(props) {
@@ -9,13 +7,7 @@ class Cover extends Component {
   }
 
   render() {
-    return (
-      <Layout className="login">
-        <Layout.Content className="full-centering container-content">
-          <Login />
-        </Layout.Content>
-      </Layout>
-    )
+    return <div>Test</div>
   }
 }
 
