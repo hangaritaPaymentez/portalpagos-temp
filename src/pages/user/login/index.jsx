@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import T from 'components/SystemComponent/T'
 import LangChanger from 'components/LayoutComponents/LangChanger'
 import { loginAction } from 'models/redux/user/actions'
-import Logo from '../../../assets/images/logo.png'
+// import Logo from '../../../assets/images/logo.png'
 
 @Form.create()
 @connect(({ user }) => ({ user }))
@@ -34,7 +34,7 @@ class Login extends Component {
         <Row type="flex" justify="center" className="w-100" style={{ maxWidth: '800px' }}>
           <Col xs={14}>
             <Card className="full-centering h-100" bodyStyle={{ width: '100%' }}>
-              <div className="full-centering">
+              {/* <div className="full-centering">
                 <img
                   src={Logo}
                   className="img-fluid"
@@ -43,7 +43,7 @@ class Login extends Component {
                   }}
                   alt="DaviPay"
                 />
-              </div>
+              </div> */}
 
               <Form layout="vertical" hideRequiredMark>
                 <Form.Item label={<T>Email</T>}>
