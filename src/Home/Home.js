@@ -14,7 +14,6 @@ import industries from '../Assets/img/09.png'
 import medicine from '../Assets/img/10.png'
 import publicService from '../Assets/img/11.png'
 import otherComercies from '../Assets/img/12.png'
-// import homeimg from "../Assets/img/background.png";
 
 import './styles.less'
 
