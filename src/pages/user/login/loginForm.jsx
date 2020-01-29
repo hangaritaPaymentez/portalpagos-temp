@@ -36,9 +36,9 @@ class LoginForm extends Component {
           <>
             <Helmet title="Login" />
 
-            <Row type="flex" justify="center" className="w-100" style={{ maxWidth: '800px' }}>
+            <Row type="flex" justify="center" className="w-100 max-w-md">
               <Col xs={14}>
-                <Card className="full-centering h-100" bodyStyle={{ width: '100%' }}>
+                <Card className="full-centering h-100 " bodyStyle={{ width: '100%' }}>
                   <div className="full-centering">
                     <img
                       src={Logo}
