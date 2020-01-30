@@ -6,7 +6,7 @@ import Loader from 'components/LayoutComponents/Loader'
 import NotFoundPage from 'pages/status/404'
 import RecursiveRouter from 'routers/recursiveRouter'
 import { Helmet } from 'react-helmet'
-import enviroment from 'constants/base'
+import { SITE_NAME } from 'constants/base'
 import Cover from 'pages/cover'
 
 const loadable = loader =>
@@ -52,7 +52,7 @@ class Router extends React.Component {
     const { history } = this.props
     return (
       <ConnectedRouter history={history}>
-        <Helmet titleTemplate={`${enviroment.site_name} | %s`} title="Index" />
+        <Helmet titleTemplate={`${SITE_NAME} | %s`} title="Index" />
         <Switch>
           <Route exact path="/" render={() => <Cover />} />
           {routes.map(route => (

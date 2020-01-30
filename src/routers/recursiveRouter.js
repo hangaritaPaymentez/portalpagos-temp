@@ -5,7 +5,15 @@ class RecursiveRouter extends React.Component {
   render() {
     const { route } = this.props
     const { children = null, exact = true, path, Component } = route
-    return <Route path={path} render={() => <Component routes={children} />} exact={exact} />
+    return (
+      <Route
+        path={path}
+        render={() => {
+          return <Component childrenRoutes={children} />
+        }}
+        exact={exact}
+      />
+    )
   }
 }
 

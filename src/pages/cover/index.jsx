@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from 'Common/NavBar/NavBar';
-import Footer from 'Common/Footer/Footer';
+import NavBar from 'components/Common/NavBar/NavBar';
+import Footer from 'components/Common/Footer/Footer';
 import Home from 'pages/Home/Home';
 // import ListSection from 'pages/ListSection/ListSection';
 // import Login from 'pages/user/login'

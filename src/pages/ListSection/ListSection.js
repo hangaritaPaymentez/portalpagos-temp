@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col, Breadcrumb, Select, List } from 'antd'
-import Searchbar from 'Common/Searchbar/Searchbar'
+import Searchbar from 'components/Common/Searchbar/Searchbar'
 import './styles.less'
 
 const { Option } = Select

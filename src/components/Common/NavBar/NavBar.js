@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import { Row, Col, Layout, Menu } from 'antd'
-import logo from '../../Assets/img/dvvlogo.png'
+import logo from '../../../assets/img/dvvlogo.png'
 import './styles.less'
 
 const { Header } = Layout

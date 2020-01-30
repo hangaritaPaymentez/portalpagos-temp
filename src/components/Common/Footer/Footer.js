@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'antd'
-import vigilado from '../../Assets/img/vigilado.png'
+import vigilado from '../../../assets/img/vigilado.png'
 
 import './styles.less'
 
