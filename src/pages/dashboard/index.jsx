@@ -23,7 +23,7 @@ class Dashboard extends Component {
     const { collapsed } = this.state
     return (
       <>
-        <Layout style={{ minHeight: '100vh' }}>
+        <Layout className="container-view">
           <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
             <div className="logo" />
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
@@ -67,8 +67,8 @@ class Dashboard extends Component {
             </Menu>
           </Sider>
           <Layout>
-            <Header style={{ background: '#fff', padding: 0 }} />
-            <Content style={{ margin: '0 16px' }}>
+            <Header />
+            <Content className="container-content">
               <MainSwitcher switcherData={{ ...switcherData }} />
             </Content>
             <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
