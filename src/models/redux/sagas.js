@@ -12,7 +12,7 @@ import challenges from './challenge/sagas'*/
 export default function* rootSaga() {
   yield all([
     user(),
-    /*menu(),
+    /* menu(),
     settings(),
     cupones(),
     commerce(),

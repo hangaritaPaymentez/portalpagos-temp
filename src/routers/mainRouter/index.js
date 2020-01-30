@@ -1,51 +1,10 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
 import { ConnectedRouter } from 'connected-react-router'
-import Loadable from 'react-loadable'
-import Loader from 'components/LayoutComponents/Loader'
-import NotFoundPage from 'pages/status/404'
-import RecursiveRouter from 'routers/recursiveRouter'
 import { Helmet } from 'react-helmet'
 import { SITE_NAME } from 'constants/base'
-import Cover from 'pages/cover'
-
-const loadable = loader =>
-  Loadable({
-    loader,
-    delay: false,
-    loading: () => <Loader />,
-  })
-
-export const routes = [
-  {
-    path: '/login',
-    breadcrumbName: 'login',
-    Component: loadable(() => import('pages/user/login')),
-    exact: true,
-  },
-  {
-    path: '/first',
-    breadcrumbName: 'first',
-    children: [
-      {
-        path: '/general',
-        breadcrumbName: 'General',
-      },
-      {
-        path: '/layout',
-        breadcrumbName: 'Layout',
-      },
-      {
-        path: '/navigation',
-        breadcrumbName: 'Navigation',
-      },
-    ],
-  },
-  {
-    path: '/second',
-    breadcrumbName: 'second',
-  },
-]
+import { routes } from 'routers/routes'
+import MainSwitcher from 'routers/mainSwitcher'
+import DefaultRouter from 'routers/defaultRouter'
 
 class Router extends React.Component {
   render() {
@@ -53,13 +12,9 @@ class Router extends React.Component {
     return (
       <ConnectedRouter history={history}>
         <Helmet titleTemplate={`${SITE_NAME} | %s`} title="Index" />
-        <Switch>
-          <Route exact path="/" render={() => <Cover />} />
-          {routes.map(route => (
-            <RecursiveRouter route={route} key={route.path} />
-          ))}
-          <Route component={NotFoundPage} />
-        </Switch>
+        <DefaultRouter>
+          <MainSwitcher switcherData={{ routes }} />
+        </DefaultRouter>
       </ConnectedRouter>
     )
   }
