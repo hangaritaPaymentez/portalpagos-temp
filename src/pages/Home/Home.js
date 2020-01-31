@@ -19,10 +19,10 @@ import otherComercies from '../../assets/img/12.png'
 
 const Home = () => {
   return (
-    <div>
-      <div className="container-content home">
+    <div className="container-content">
+      <div className="home container-content">
         <Row>
-          <Col sm={12} md={12} lg={24} xl={24}>
+          <Col sm={12} md={24} lg={24} xl={24}>
             <h3>Busca el comercio en donde quieras hacer un pago</h3>
           </Col>
         </Row>

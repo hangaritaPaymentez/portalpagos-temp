@@ -16,7 +16,7 @@ class Cover extends Component {
     return (
       <Layout className="container-view">
         <NavBar />
-        <Content className="full-centering container-content">
+        <Content>
           <Home />
         </Content>
         <Footer />

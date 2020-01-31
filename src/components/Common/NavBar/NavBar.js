@@ -10,7 +10,7 @@ const { Header } = Layout
 const NavBar = () => {
   return (
     <Header className="bg-primary-color w-100 container-content">
-      <Row className="container-content">
+      <Row>
         <Col sm={24} md={5} lg={{ span: 4, offset: 2 }} xl={{ span: 6 }}>
           <img src={logo} alt="logo" className="w-100" />
         </Col>
