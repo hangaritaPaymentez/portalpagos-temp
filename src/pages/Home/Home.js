@@ -15,15 +15,15 @@ import medicine from '../../assets/img/10.png'
 import publicService from '../../assets/img/11.png'
 import otherComercies from '../../assets/img/12.png'
 
-// import './styles.less'
-
 const Home = () => {
   return (
-    <div className="container-content">
-      <div className="home container-content">
+    <div>
+      <div className="home__img">
         <Row>
-          <Col sm={12} md={24} lg={24} xl={24}>
-            <h3>Busca el comercio en donde quieras hacer un pago</h3>
+          <Col sm={12} md={20} lg={{span: 10, offset: 3}} xl={{span: 10, offset: 3}}>
+            <h2 className="fc-white fs-title bold home__title">
+              Busca el comercio en donde quieras hacer un pago
+            </h2>
           </Col>
         </Row>
         <Row>
@@ -32,39 +32,45 @@ const Home = () => {
           </Col>
         </Row>
       </div>
-      <div className="home__cards">
+      <div>
         <Row>
           <Col sm={12} md={12} lg={10} xl={12} offset={3}>
-            <h3>Has buscado antes</h3>
+            <h3 className="fc-gray fs-title bold">Has buscado antes</h3>
           </Col>
           <Col sm={12} md={12} lg={10} xl={12} offset={3}>
             <Card>hola card</Card>
           </Col>
         </Row>
       </div>
-      <div className="home__cards">
+      <div>
         <Row>
           <Col sm={12} md={12} lg={10} xl={12} offset={3}>
-            <h3>Categorías de comercios</h3>
+            <h3 className="fc-gray fs-title bold">Categorías de comercios</h3>
           </Col>
         </Row>
-        <Row className="home__cards-padding">
-          <CardItem title="Agencia de viajes" img={travels} />
-          <CardItem title="Club social y Deportivo" img={sports} />
-          <CardItem title="Colegios e instituciones educativas" img={schools} />
-          <CardItem title="Concesionarios" img={dealership} />
+        <Row>
+          <Col sm={12} md={12} lg={21} xl={21} offset={3}>
+            <CardItem title="Agencia de viajes" img={travels} />
+            <CardItem title="Club social y Deportivo" img={sports} />
+            <CardItem title="Colegios e instituciones educativas" img={schools} />
+            <CardItem title="Concesionarios" img={dealership} />
+          </Col>
         </Row>
-        <Row className="home__cards-padding">
-          <CardItem title="Conjuntos residenciales" img={residency} />
-          <CardItem title="Fiduciarias y comisionistas" img={commission} />
-          <CardItem title="Hoteles e inmobiliarias" img={hotels} />
-          <CardItem title="Impuestos, servicios, notarías" img={notaries} />
+        <Row>
+          <Col sm={12} md={12} lg={21} xl={21} offset={3}>
+            <CardItem title="Conjuntos residenciales" img={residency} />
+            <CardItem title="Fiduciarias y comisionistas" img={commission} />
+            <CardItem title="Hoteles e inmobiliarias" img={hotels} />
+            <CardItem title="Impuestos, servicios, notarías" img={notaries} />
+          </Col>
         </Row>
-        <Row className="home__cards-padding">
-          <CardItem title="Industrias y constructoras" img={industries} />
-          <CardItem title="Salud y medicina prepagada" img={medicine} />
-          <CardItem title="Servicios públicos" img={publicService} />
-          <CardItem title="Otros comercios..." img={otherComercies} />
+        <Row>
+          <Col sm={12} md={12} lg={21} xl={21} offset={3}>
+            <CardItem title="Industrias y constructoras" img={industries} />
+            <CardItem title="Salud y medicina prepagada" img={medicine} />
+            <CardItem title="Servicios públicos" img={publicService} />
+            <CardItem title="Otros comercios..." img={otherComercies} />
+          </Col>
         </Row>
       </div>
     </div>

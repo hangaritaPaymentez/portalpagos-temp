@@ -4,7 +4,7 @@ import vigilado from '../../../assets/img/vigilado.png'
 
 const Footer = () => {
   return (
-    <div className="bg-footer lineHeight">
+    <div className="bg-footer">
       <Row type="flex" align="middle">
         <Col sm={24} md={5} offset={1}>
           <img src={vigilado} alt="vigilado" className="w-100" />
