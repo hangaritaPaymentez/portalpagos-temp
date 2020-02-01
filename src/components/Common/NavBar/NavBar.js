@@ -2,7 +2,6 @@
 import React from 'react'
 import { Row, Col, Layout, Menu } from 'antd'
 import logo from 'assets/img/logo.png'
-// import './styles.less'
 
 const { Item } = Menu
 const { Header } = Layout
@@ -15,7 +14,7 @@ const NavBar = () => {
           <img src={logo} alt="logo" className="w-100" />
         </Col>
         <Col sm={12} md={4} lg={3} xl={3}>
-          <a className="fc-white">Pagos virtuales</a>
+          <a className="fc-white fs-secondary">Pagos virtuales</a>
         </Col>
         <Col sm={12} md={12} lg={{ span: 12, offset: 1 }} xl={{ span: 12 }}>
           <Menu mode="horizontal" className="bg-primary-color lineHeight">

@@ -1,18 +1,17 @@
 import React from 'react'
-import { Col, Card } from 'antd'
-// import './styles.less'
+import { Col } from 'antd'
 
 const CardItem = props => {
   const { img, title } = props
   return (
-    <Col sm={12} md={12} lg={5} xl={5} className="cardItem">
-      <a href="#">
-        <Card hoverable className="cardItem__img">
-          <div>
+    <Col sm={12} md={12} lg={5} xl={5} className="home__cardItem">
+      <a href="#" className="cardItem__link">
+        <div className="cardItem__container">
+          <div className="cardItem__img">
             <img src={img} alt="icon category" className="w-100" />
           </div>
-          <p>{title}</p>
-        </Card>
+          <p className="cardItem__title">{title}</p>
+        </div>
       </a>
     </Col>
   )

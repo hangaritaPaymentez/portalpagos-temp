@@ -42,14 +42,14 @@ const Home = () => {
           </Col>
         </Row>
       </div>
-      <div>
+      <div className="home__cards">
         <Row>
           <Col sm={12} md={12} lg={10} xl={12} offset={3}>
             <h3 className="fc-gray fs-title bold">Categorías de comercios</h3>
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={12} lg={21} xl={21} offset={3}>
+          <Col sm={12} md={9} lg={21} xl={21} offset={3}>
             <CardItem title="Agencia de viajes" img={travels} />
             <CardItem title="Club social y Deportivo" img={sports} />
             <CardItem title="Colegios e instituciones educativas" img={schools} />
@@ -57,7 +57,7 @@ const Home = () => {
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={12} lg={21} xl={21} offset={3}>
+          <Col sm={12} md={9} lg={21} xl={21} offset={3}>
             <CardItem title="Conjuntos residenciales" img={residency} />
             <CardItem title="Fiduciarias y comisionistas" img={commission} />
             <CardItem title="Hoteles e inmobiliarias" img={hotels} />
@@ -65,7 +65,7 @@ const Home = () => {
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={12} lg={21} xl={21} offset={3}>
+          <Col sm={12} md={9} lg={21} xl={21} offset={3}>
             <CardItem title="Industrias y constructoras" img={industries} />
             <CardItem title="Salud y medicina prepagada" img={medicine} />
             <CardItem title="Servicios públicos" img={publicService} />
