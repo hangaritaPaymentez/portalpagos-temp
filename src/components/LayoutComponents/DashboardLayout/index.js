@@ -5,17 +5,17 @@ import Footer from 'components/Common/Footer/Footer'
 
 const { Content } = Layout
 
-class Cover extends Component {
+class BasicLayout extends Component {
   render() {
-    // const { children = null } = this.props
+    const { children = null } = this.props
     return (
       <Layout className="container-view">
         <NavBar />
-        <Content>Cover</Content>
+        <Content>{children}</Content>
         <Footer />
       </Layout>
     )
   }
 }
 
-export default Cover
+export default BasicLayout

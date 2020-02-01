@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from 'antd'
-import BreadcrumGen from 'components/LayoutComponents/Breadcrum'
+import BreadcrumGen from 'components/Common/Breadcrum'
 
 class DashboardFind extends React.Component {
   render() {

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import T from 'components/SystemComponent/T'
 import { withTranslation } from 'react-i18next'
-import LangChanger from 'components/LayoutComponents/LangChanger'
+import LangChanger from 'components/Common/LangChanger'
 import { loginAction } from 'models/redux/user/actions'
 import Logo from '../../../assets/img/logo.png'
 

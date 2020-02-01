@@ -1,6 +1,6 @@
 import React from 'react'
 import Loadable from 'react-loadable'
-import Loader from 'components/LayoutComponents/Loader'
+import Loader from 'components/Common/Loader'
 
 const loadable = loader =>
   Loadable({
@@ -20,6 +20,12 @@ export const routes = [
     path: '/login',
     breadcrumbName: 'login',
     Component: loadable(() => import('pages/user/login')),
+    exact: true,
+  },
+  {
+    path: '/home',
+    breadcrumbName: 'Home',
+    Component: loadable(() => import('pages/Home/Home')),
     exact: true,
   },
   {

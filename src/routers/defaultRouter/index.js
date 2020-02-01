@@ -1,6 +1,6 @@
 import React from 'react'
 import { Redirect, withRouter } from 'react-router-dom'
-import Loader from 'components/LayoutComponents/Loader'
+import Loader from 'components/Common/Loader'
 import { connect } from 'react-redux'
 
 /*eslint no-constant-condition: 0*/
